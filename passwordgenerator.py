@@ -1,5 +1,6 @@
 import random
 import string
+import time
 from io import open
 
 
@@ -18,12 +19,13 @@ def GeneratePassword():
 
         print(f"Password generated successfuly : {password}")
 
+        time.sleep(0.5)
+        
         choice = input("Do you want save this password in a file ? (Yes or No): ")
 
         if (choice.lower() == "yes"):
             file = open("password.txt", "w")
             file.write(f"Developed by https://github.com/Mazzya\n\nPassword : {password}".center(50, " "))
-            file.seek(1)
             file.close()
             print("File saved successfully")
         elif (choice.lower() == "no"):
@@ -36,6 +38,3 @@ def GeneratePassword():
         print("You have to enter an integer")
     except:
         print("Something is wrong...")
-
-if __name__ == "__main__":
-    GeneratePassword()
