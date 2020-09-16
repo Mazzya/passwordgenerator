@@ -1,6 +1,11 @@
+# This script has been developed by Mazzya
+# Github : https://github.com/Mazzya
+# Repository address : https://github.com/Mazzya/passwordgenerator
+# This script allows you to generate strong passwords and save them
+# Current version : 1.1.2
+
 import random
 import string
-import time
 from io import open
 
 
@@ -14,24 +19,26 @@ def GeneratePassword():
 
         length = int(input("How many characters do you want the password to have ?: "))
 
-        for i in range(length+1):
-            password += random.choice(chars)
+        if (length >= 4):
 
-        print(f"Password generated successfuly : {password}")
+            for i in range(length+1):
+                password += random.choice(chars)
 
-        time.sleep(0.5)
-        
-        choice = input("Do you want save this password in a file ? (Yes or No): ")
+            print(f"Password generated successfuly : {password}")
+            
+            choice = input("Do you want save this password in a file ? (Yes or No): ")
 
-        if (choice.lower() == "yes"):
-            file = open("password.txt", "w")
-            file.write(f"Developed by https://github.com/Mazzya\n\nPassword : {password}".center(50, " "))
-            file.close()
-            print("File saved successfully")
-        elif (choice.lower() == "no"):
-            print("Bye !")
+            if (choice.lower() == "yes"):
+                file = open("password.txt", "a+")
+                file.write(f"Password : {password}" + "\n")
+                file.close()
+                print("File saved successfully")
+            elif (choice.lower() == "no"):
+                print("Bye !")
+            else:
+                print("Remember that you can only answer yes or no")
         else:
-            print("Remember that you can only answer yes or no")
+            print("Enter a minimum of 4 characters")
 
     except ValueError:
         """If the user enters a letter or float instead of an integer"""
