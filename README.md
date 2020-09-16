@@ -4,6 +4,14 @@
 
 An incredible script capable of generating very secure passwords
 
+
+### Requirements
+```
+Python 3
+String
+Io
+Random
+```
 ### How to use
 ```
 import passwordgenerator
