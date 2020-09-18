@@ -8,9 +8,9 @@ An incredible script capable of generating very secure passwords
 ### Requirements
 ```
 Python 3
-String
-Io
-Random
+string
+io
+secrets
 ```
 ### How to use
 ```
