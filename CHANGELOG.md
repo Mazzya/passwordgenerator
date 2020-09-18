@@ -1,5 +1,15 @@
 # Change Log
 
+## v2.2.1 - Sep. 18, 2020
+**Added:**
+- Secrets module
+
+**Changed:**
+- The password generation system has been considerably improved, now they are much more secure and strong. The randomness factor is much higher and impossible to predict. 
+
+**Removed:**
+- Random module
+
 ## v1.1.2 - Sep. 16, 2020
 **Added:**
 - Character verification : if the user enters less than 4 characters he will not be able to generate a password

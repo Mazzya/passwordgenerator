@@ -2,18 +2,18 @@
 # Github : https://github.com/Mazzya
 # Repository address : https://github.com/Mazzya/passwordgenerator
 # This script allows you to generate strong passwords and save them
-# Current version : 1.1.2
+# Current version : 2.2.1
 
-import random
 import string
 from io import open
+import secrets
 
 
 def GeneratePassword():
     password = ""
     """ Creation of the variable where the generated password is stored """
 
-    chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[:-6])
+    chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[:-9])
 
     try:
 
@@ -21,8 +21,8 @@ def GeneratePassword():
 
         if (length >= 4):
 
-            for i in range(length+1):
-                password += random.choice(chars)
+            for i in range(length):
+                password += secrets.choice(chars)
 
             print(f"Password generated successfuly : {password}")
             
@@ -45,3 +45,5 @@ def GeneratePassword():
         print("You have to enter an integer")
     except:
         print("Something is wrong...")
+
+GeneratePassword()
