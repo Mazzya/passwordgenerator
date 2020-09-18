@@ -1,8 +1,9 @@
 # Change Log
 
-## v2.2.1 - Sep. 18, 2020
+## v2.2.3 - Sep. 18, 2020
 **Added:**
 - Secrets module
+- Code documentation
 
 **Changed:**
 - The password generation system has been considerably improved, now they are much more secure and strong. The randomness factor is much higher and impossible to predict. 
