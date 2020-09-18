@@ -45,3 +45,4 @@ def GeneratePassword():
         print("You have to enter an integer")
     except:
         print("Something is wrong...")
+GeneratePassword()
