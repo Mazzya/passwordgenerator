@@ -1,16 +1,16 @@
 # Change Log
 
-## v2.2.4 - Sep. 19, 2020
-**Fixed:**
-- Script compatibility with different operating systems has been improved
-
-## v2.2.3 - Sep. 18, 2020
+## v2.2.3 - Sep. 19, 2020
 **Added:**
 - Secrets module
 - Code documentation
+- Code cleaned
 
 **Changed:**
 - The password generation system has been considerably improved, now they are much more secure and strong. The randomness factor is much higher and impossible to predict. 
+
+**Fixed:**
+- Script compatibility with different operating systems has been improved
 
 **Removed:**
 - Random module
