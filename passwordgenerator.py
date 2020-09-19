@@ -1,8 +1,9 @@
+#!/usr/bin/env python
 # This script has been developed by Mazzya
 # Github : https://github.com/Mazzya
 # Repository address : https://github.com/Mazzya/passwordgenerator
 # This script allows you to generate strong passwords and save them
-# Current version : 2.2.3
+# Current version : 2.2.4
 
 import string
 from io import open

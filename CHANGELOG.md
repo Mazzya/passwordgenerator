@@ -1,5 +1,9 @@
 # Change Log
 
+## v2.2.4 - Sep. 19, 2020
+**Fixed:**
+- Script compatibility with different operating systems has been improved
+
 ## v2.2.3 - Sep. 18, 2020
 **Added:**
 - Secrets module
