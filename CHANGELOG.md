@@ -1,5 +1,14 @@
 # Change Log
 
+## v2.3.3 - Sep. 20, 2020
+**Added:**
+- Colorama module
+- The aesthetics of the text that is printed on screen has been improved by adding colors
+
+**Changed:**
+- A dynamic variable has been created where the version of the program has been saved, which will facilitate its manipulation in the future
+- The file saving system has been improved
+
 ## v2.2.3 - Sep. 19, 2020
 **Added:**
 - Secrets module

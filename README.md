@@ -1,6 +1,6 @@
 # Password Generator
 
-**Version 2.2.3** - [Change log](CHANGELOG.md)
+**Version 2.3.3** - [Change log](CHANGELOG.md)
 
 An incredible script capable of generating very secure passwords
 
