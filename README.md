@@ -2,7 +2,7 @@
 
 **Version 2.3.3** - [Change log](CHANGELOG.md)
 
-An incredible script capable of generating very secure passwords
+An incredible module capable of generating very secure passwords
 
 
 ### Requirements
@@ -34,3 +34,4 @@ You can save the password in a text file so as not to lose it
 >>> File saved successfuly
 ```
 The file is saved in the same folder where you are using the module
+#### If you want to use the module as a program, call the function in the code and run the script
