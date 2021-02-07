@@ -1,6 +1,6 @@
 # Password Generator
 
-**Version 2.3.3** - [Change log](CHANGELOG.md)
+**Version 3.3.3** - [Change log](CHANGELOG.md)
 
 An incredible module capable of generating very secure passwords
 
@@ -13,12 +13,9 @@ io
 secrets
 ```
 ### How to use
-```
-import passwordgenerator
-passwordgenerator.GeneratePassword()
-```
+Run the script by double-clicking it.
 
-The script will ask you how many characters you want the password to contain
+When script opens, he will ask you how many characters you want the password to contain
 ```
 >>> How many characters do you want the password to have ?: 8
 ```
@@ -34,4 +31,3 @@ You can save the password in a text file so as not to lose it
 >>> File saved successfuly
 ```
 The file is saved in the same folder where you are using the module
-#### If you want to use the module as a program, call the function in the code and run the script

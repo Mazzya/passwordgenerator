@@ -1,5 +1,15 @@
 # Change Log
+## v3.3.3. - Feb. 07, 2021
+**Added:**
+- Datatime module : When the user generates a password, the date the password was generated will also be seen, the objective is for the user to know when the password was generated
+- A script entry point has been added.
 
+**Changed:**
+- The structure of the code
+- The script no longer serves as a simple module, now it only works as a script that can be run in any environment. We noticed that it was not suitable to be a module to use in development. The main idea of this project has always been to create an easy to use mini program capable of generating strong and secure passwords.
+
+**Removed:**
+- The file __init__.py has been removed, this file told Python that it was a module.
 ## v2.3.3 - Sep. 20, 2020
 **Added:**
 - Colorama module
