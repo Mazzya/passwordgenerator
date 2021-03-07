@@ -14,13 +14,21 @@ class Password:
 
     def __init__(self):
         self.GeneratePassword()
+    
+    def checkPasswordName(self, passwordName) -> bool:
+        """ This function checks if the user has entered a password name """
+        isValid = False
+        if passwordName != "":
+            isValid = True
+            return isValid
+        return isValid
 
     def GeneratePassword(self):
         """ This function generates strong passwords with the character length that the user wants. """
 
         dt = datetime.now()
 
-        current_version = "3.3.3"
+        current_version = "3.4.3"
 
         init(autoreset=True)
 
@@ -51,9 +59,15 @@ class Password:
 
                 # If the user wants to save the password in a file.
                 if (choice.lower() == "yes"):
-                    with open('password.txt', 'a+') as f:
-                        f.write(f"Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
-                    print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
+                    passwordName = input("Password name (If you don't want to give it a name, press enter): ")
+                    if self.checkPasswordName(passwordName):
+                        with open('password.txt', 'a+') as f:
+                            f.write(f"{passwordName} Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
+                        print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
+                    else:
+                        with open('password.txt', 'a+') as f:
+                            f.write(f"Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
+                        print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
 
                 # If the user don't wants to save the password in a file.
                 elif (choice.lower() == "no"):

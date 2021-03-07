@@ -1,4 +1,7 @@
 # Change Log
+## v3.4.3 - Mar. 07, 2021
+**Added:**
+- Password name : Naming the passwords can be very useful when we have many, so now it is possible to name the passwords that you are going to generate, the objective is to facilitate the organization of the passwords.
 ## v3.3.3. - Feb. 07, 2021
 **Added:**
 - Datatime module : When the user generates a password, the date the password was generated will also be seen, the objective is for the user to know when the password was generated
