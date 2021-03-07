@@ -1,6 +1,6 @@
 # Password Generator
 
-**Version 3.3.3** - [Change log](CHANGELOG.md)
+**Version 3.4.3** - [Change log](CHANGELOG.md)
 
 An incredible module capable of generating very secure passwords
 
