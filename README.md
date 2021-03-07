@@ -28,6 +28,9 @@ When you have entered the number, a password is automatically generated
 You can save the password in a text file so as not to lose it
 ```
 >>> Do you want save this password in a file ? (Yes or No): Yes
->>> File saved successfuly
 ```
-The file is saved in the same folder where you are using the module
+You can put a name to your password
+```
+>>> Password name (If you don't want to give it a name, press enter):
+```
+The file with the generated passwords is created in the same directory as the script.
