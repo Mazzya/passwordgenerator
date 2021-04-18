@@ -10,7 +10,27 @@ from colorama import init, Fore, Style
 import secrets
 from datetime import datetime
 
+
+BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
+*****************************************************************************************************************
+*     ______                                      _    _______                                                  *    
+*    (_____ \                                    | |  (_______)                                _                *
+*     _____) )____  ___  ___ _ _ _  ___   ____ __| |   _   ___ _____ ____  _____  ____ _____ _| |_ ___   ____   *
+*    |  ____(____ |/___)/___) | | |/ _ \ / ___) _  |  | | (_  | ___ |  _ \| ___ |/ ___|____ (_   _) _ \ / ___)  *
+*    | |    / ___ |___ |___ | | | | |_| | |  ( (_| |  | |___) | ____| | | | ____| |   / ___ | | || |_| | |      *
+*    |_|    \_____(___/(___/ \___/ \___/|_|   \____|   \_____/|_____)_| |_|_____)_|   \_____|  \__)___/|_|      *
+*                                                                                                               *
+*   Developed by Mazzya                                                                                         *
+*   Version 3.4.3                                                                                               *
+*   Github : github.com/Mazzya                                                                                  *
+*   mazzya.tk                                                                                                   *
+*****************************************************************************************************************                    
+"""
+
+
 class Password:
+
+    current_version = "3.4.3"
 
     def __init__(self):
         self.GeneratePassword()
@@ -28,8 +48,6 @@ class Password:
 
         dt = datetime.now()
 
-        current_version = "3.4.3"
-
         init(autoreset=True)
 
         # Creation of the variable where the generated password is stored
@@ -39,7 +57,9 @@ class Password:
 
         try:
             
-            print(f"{Fore.CYAN}{Style.BRIGHT}Welcome to Password Generator {current_version}\n")
+            #print(f"{Fore.CYAN}{Style.BRIGHT}Welcome to Password Generator {current_version}\n")
+
+            print(BANNER)
             
 
             length = int(input("How many characters do you want the password to have ?: "))
