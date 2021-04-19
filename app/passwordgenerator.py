@@ -56,8 +56,6 @@ class Password:
         chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[:-9])
 
         try:
-            
-            #print(f"{Fore.CYAN}{Style.BRIGHT}Welcome to Password Generator {current_version}\n")
 
             print(BANNER)
             
@@ -68,8 +66,7 @@ class Password:
             # If the user enters 4 characters or more, the password is generated
             if (length >= 4):
 
-                for i in range(length):
-                    password += secrets.choice(chars)
+                for i in range(length): password += secrets.choice(chars)
 
                 # The generated password is displayed next to a message
                 print(f"{Fore.GREEN}{Style.BRIGHT}Password generated successfuly : {password}\n")
