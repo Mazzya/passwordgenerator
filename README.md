@@ -16,7 +16,7 @@ io
 secrets
 ```
 ### How to use
-Run the script by double-clicking it.
+Run the script by double-clicking it or run this command in the console : ```python passwordgenerator.py```
 
 When script opens, he will ask you how many characters you want the password to contain
 ```
