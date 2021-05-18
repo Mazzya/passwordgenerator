@@ -10,7 +10,7 @@ from colorama import init, Fore, Style
 import secrets
 from datetime import datetime
 
-VERSION = "3.4.4"
+VERSION = '3.4.4'
 BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
 *****************************************************************************************************************
 *     ______                                      _    _______                                                  *    
