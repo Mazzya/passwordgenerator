@@ -16,7 +16,7 @@ io
 secrets
 ```
 ### How to use
-Run the script by double-clicking it.
+Run the script by double-clicking it or run this command in the console : ```python passwordgenerator.py```
 
 When script opens, he will ask you how many characters you want the password to contain
 ```
@@ -37,3 +37,8 @@ You can put a name to your password
 >>> Password name (If you don't want to give it a name, press enter):
 ```
 The file with the generated passwords is created in the same directory as the script.
+
+### **Important**
+Saving passwords in a text file is never safe. That is why it is important that once you generate the passwords you need, save them in a password manager or encrypt the file that contains the passwords. I recommend that you use [**KeePass**](https://keepass.info/) as your password manager, it is open source and easy to use.
+
+Please note what I have told you and protect your passwords properly.

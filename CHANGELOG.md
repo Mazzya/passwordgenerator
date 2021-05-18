@@ -1,4 +1,14 @@
 # Change Log
+## v3.4.4 - May 18, 2021
+**Added:**
+- Important tips on how to protect generated passwords
+
+**Changed:**
+- Now the variable where the password is stored is created a bit later in the process.
+
+**Fixed:**
+- Refactoring variables and functions
+- Correction of an internal function
 ## v3.4.3 - Mar. 07, 2021
 **Added:**
 - Password name : Naming the passwords can be very useful when we have many, so now it is possible to name the passwords that you are going to generate, the objective is to facilitate the organization of the passwords.

@@ -10,7 +10,7 @@ from colorama import init, Fore, Style
 import secrets
 from datetime import datetime
 
-
+VERSION = '3.4.4'
 BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
 *****************************************************************************************************************
 *     ______                                      _    _______                                                  *    
@@ -21,7 +21,7 @@ BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
 *    |_|    \_____(___/(___/ \___/ \___/|_|   \____|   \_____/|_____)_| |_|_____)_|   \_____|  \__)___/|_|      *
 *                                                                                                               *
 *   Developed by Mazzya                                                                                         *
-*   Version 3.4.3                                                                                               *
+*   Version {VERSION}                                                                                               *
 *   Github : github.com/Mazzya                                                                                  *
 *   mazzya.tk                                                                                                   *
 *****************************************************************************************************************                    
@@ -30,28 +30,22 @@ BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
 
 class Password:
 
-    current_version = "3.4.3"
-
     def __init__(self):
-        self.GeneratePassword()
+        self.generate_password()
     
-    def checkPasswordName(self, passwordName) -> bool:
+    def check_password_name(self, password_name) -> bool:
         """ This function checks if the user has entered a password name """
         isValid = False
-        if passwordName != "":
+        if password_name != "":
             isValid = True
-            return isValid
         return isValid
 
-    def GeneratePassword(self):
+    def generate_password(self):
         """ This function generates strong passwords with the character length that the user wants. """
 
         dt = datetime.now()
 
         init(autoreset=True)
-
-        # Creation of the variable where the generated password is stored
-        password = ""
 
         chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[:-9])
 
@@ -65,6 +59,8 @@ class Password:
 
             # If the user enters 4 characters or more, the password is generated
             if (length >= 4):
+                # Creation of the variable where the generated password is stored
+                password = ""
 
                 for i in range(length): password += secrets.choice(chars)
 
@@ -76,10 +72,10 @@ class Password:
 
                 # If the user wants to save the password in a file.
                 if (choice.lower() == "yes"):
-                    passwordName = input("Password name (If you don't want to give it a name, press enter): ")
-                    if self.checkPasswordName(passwordName):
+                    password_name = input("Password name (If you don't want to give it a name, press enter): ")
+                    if self.check_password_name(password_name):
                         with open('password.txt', 'a+') as f:
-                            f.write(f"{passwordName} Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
+                            f.write(f"{password_name} Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
                         print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
                     else:
                         with open('password.txt', 'a+') as f:
