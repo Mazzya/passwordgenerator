@@ -1,7 +1,7 @@
 # Password Generator
 ![test](https://github.com/Mazzya/passwordgenerator/blob/master/assets/logo.png)
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=for-the-badge)](https://www.python.org/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](http://perso.crans.org/besson/LICENSE.html) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/Mazzya/image-resizer/blob/main/CHANGELOG.md) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/passwordgenerator?style=for-the-badge)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Mazzya/image-resizer/blob/main/CHANGELOG.md) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/passwordgenerator)
 
 Visit [Change log](CHANGELOG.md)
 
