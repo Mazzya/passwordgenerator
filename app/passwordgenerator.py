@@ -95,9 +95,12 @@ class Password:
                 print(f"{Fore.RED}{Style.BRIGHT}Enter a minimum of 4 characters")
 
         except ValueError:
-
-            #If the user enters a letter or float instead of an integer
+            # If the user enters a letter or float instead of an integer
             print(f"{Fore.RED}{Style.BRIGHT}You have to enter an integer")
+        
+        except PermissionError:
+            # If the file does not contain the necessary permissions to be able to write to it
+            print("Permission denied, check file permissions")
 
         except:
             print(f"{Fore.RED}{Style.BRIGHT}Something is wrong...")
