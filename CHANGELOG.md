@@ -1,4 +1,7 @@
 # Change Log
+## v3.4.5 - May 22, 2021
+**Added:**
+* PermissionError exception : This exception appears when Password Generator does not have the necessary permissions to be able to write to the password file
 ## v3.4.4 - May 18, 2021
 **Added:**
 - Important tips on how to protect generated passwords
