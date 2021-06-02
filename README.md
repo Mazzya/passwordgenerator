@@ -11,8 +11,6 @@ An incredible script capable of generating very secure passwords
 ### Requirements
 ```
 Python 3
-string
-io
 secrets
 ```
 ### How to use
