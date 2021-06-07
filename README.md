@@ -11,7 +11,7 @@ An incredible script capable of generating very secure passwords
 ### Requirements
 ```
 Python 3
-secrets
+colorama
 ```
 ### How to use
 Run the script by double-clicking it or run this command in the console : ```python passwordgenerator.py```
