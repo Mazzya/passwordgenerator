@@ -11,7 +11,10 @@ An incredible script capable of generating very secure passwords
 ### Requirements
 ```
 Python 3
-colorama
+```
+To install the necessary dependencies, run this command in the console :
+```
+$ pip install -r requirements.txt
 ```
 ### How to use
 Run the script by double-clicking it or run this command in the console : ```python passwordgenerator.py```
