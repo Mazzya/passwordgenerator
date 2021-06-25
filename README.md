@@ -11,6 +11,7 @@ An incredible script capable of generating very secure passwords
 ### Requirements
 ```
 Python 3
+colorama
 ```
 To install the necessary dependencies, run this command in the console :
 ```
