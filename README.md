@@ -27,7 +27,7 @@ When script opens, he will ask you how many characters you want the password to 
 
 When you have entered the number, a password is automatically generated
 ```
-> Password generated successfuly : password
+> Password generated successfuly : UIcxmN*5
 ```
 
 You can save the password in a text file so as not to lose it
