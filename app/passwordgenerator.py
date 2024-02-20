@@ -69,33 +69,7 @@ class Password:
                 choice = input("Do you want save this password in a file ? (Yes or No): ")
 
                 self.core(choice, password, dt)
-
-                """while True:
-                    # If the user wants to save the password in a file.
-                    if choice.lower() == "yes":
-                        password_name = input("Password name (If you don't want to give it a name, press enter): ")
-                        if self.check_password_name(password_name):
-                            with open('password.txt', 'a+') as f:
-                                f.write(f"{password_name} Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
-                            print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
-                        else:
-                            with open('password.txt', 'a+') as f:
-                                f.write(f"Password : {password} - {dt.day}/{dt.month}/{dt.year}" + "\n")
-                            print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
-                        break
-
-                    # If the user don't wants to save the password in a file.
-                    elif choice.lower() == "no":
-                        print(f"{Fore.BLUE}{Style.BRIGHT}Closing...")
-                        time.sleep(1)
-                        break
-
-                    # If the user enters another word that is neither 'yes' nor 'no'
-                    else:
-                        print(f"{Fore.RED}{Style.BRIGHT}Remember that you can only answer yes or no")
-                        choice = input("Do you want save this password in a file ? (Yes or No): ")"""
-                        
-
+                
             # If the user enters less than 4 characters, the password is not generated
             else:
                 print(f"{Fore.RED}{Style.BRIGHT}Enter a minimum of 4 characters")
