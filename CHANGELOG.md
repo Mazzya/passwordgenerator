@@ -1,4 +1,16 @@
 # Change Log
+## v4.0.0 - Feb 20, 2024
+**Added:**
+- Parenthesis and hyphens to separate each file information : password name --- (creation date)
+
+**Changed:**
+- Creation of a new function to separate an important part of the code for better code readability
+
+**Fixed:**
+- Infinite loop bug when answering with a word other than "Yes" or "No"
+
+**Removed:**
+- The URL has been removed from the banner as it is no longer valid
 ## v3.4.5 - May 22, 2021
 **Added:**
 * PermissionError exception : This exception appears when Password Generator does not have the necessary permissions to be able to write to the password file
