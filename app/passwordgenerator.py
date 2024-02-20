@@ -30,6 +30,8 @@ BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
 
 class Password:
 
+    dt = datetime.now()
+
     def __init__(self):
         self.generate_password()
 
@@ -42,8 +44,6 @@ class Password:
 
     def generate_password(self):
         """ This function generates strong passwords with the character length that the user wants. """
-
-        dt = datetime.now()
 
         init(autoreset=True)
 
@@ -68,7 +68,7 @@ class Password:
                 # Asks the user if they want to save the password to a file.
                 choice = input("Do you want save this password in a file ? (Yes or No): ")
 
-                self.core(choice, password, dt)
+                self.core(choice, password)
                 
             # If the user enters less than 4 characters, the password is not generated
             else:
@@ -83,21 +83,24 @@ class Password:
             print("Permission denied, check file permissions")
 
         except Exception as e:
-            print(f"{Fore.RED}{Style.BRIGHT}Something is wrong...: {e}")
+            print(f"{Fore.RED}{Style.BRIGHT}Something is wrong...")
     
-    def core(self, choice: str, password, dt):
+    def save_password(self, password_name: bool, password):
+        if self.check_password_name(password_name):
+            with open('password.txt', 'a+') as f:
+                f.write(f"{password_name} password : {password} --- ({self.dt.day}/{self.dt.month}/{self.dt.year})" + "\n")
+                print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
+        else:
+            with open('password.txt', 'a+') as f:
+                f.write(f"password : {password} --- ({self.dt.day}/{self.dt.month}/{self.dt.year})" + "\n")
+                print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
+    
+    def core(self, choice: str, password):
         while True:
                     # If the user wants to save the password in a file.
                     if choice.lower() == "yes":
                         password_name = input("Password name (If you don't want to give it a name, press enter): ")
-                        if self.check_password_name(password_name):
-                            with open('password.txt', 'a+') as f:
-                                f.write(f"{password_name} password : {password} --- ({dt.day}/{dt.month}/{dt.year})" + "\n")
-                            print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
-                        else:
-                            with open('password.txt', 'a+') as f:
-                                f.write(f"password : {password} --- ({dt.day}/{dt.month}/{dt.year})" + "\n")
-                            print(f"{Fore.GREEN}{Style.BRIGHT}File saved successfully")
+                        self.save_password(password_name, password)
                         break
 
                     # If the user don't wants to save the password in a file.
